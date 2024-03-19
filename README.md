@@ -9,7 +9,6 @@ MovieTime è un'applicazione Flutter che sfrutta l'API di TMDB per fornire infor
 - Accedi a informazioni dettagliate su ciascun film come genere, trama e valutazione per età.
 - Guarda i trailer dei film su YouTube cliccando sul poster del film.
 
-
 ## Dipendenze
 
 - [flutter_bloc](https://pub.dev/packages/flutter_bloc): Libreria di gestione dello stato per Flutter.
@@ -18,13 +17,20 @@ MovieTime è un'applicazione Flutter che sfrutta l'API di TMDB per fornire infor
 - [http](https://pub.dev/packages/http): Libreria per effettuare richieste HTTP.
 - [url_launcher](https://pub.dev/packages/url_launcher): Plugin Flutter per aprire URL in applicazioni mobili, desktop e web.
 
-
 ## Crediti
 
 - Dati sui film forniti da [TMDB](https://www.themoviedb.org/).
 
+## Prima di iniziare
 
+Prima di eseguire il progetto, è necessario registrarsi su TMDB e ottenere una chiave API. Successivamente, crea un file denominato `api_key.dart` all'interno della directory `lib` e aggiungi il seguente codice:
 
+```dart
+// api_key.dart
 
+const String apiKey = 'La_tua_chiave_API_TMDB';
 
+```
 
+Sostituisci 'La_tua_chiave_API_TMDB' con la tua chiave API TMDB.
+ 
